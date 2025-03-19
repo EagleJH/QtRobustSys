@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RegistWindow</class>
+ <widget class="QWidget" name="RegistWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>394</width>
+    <height>282</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>-100</x>
+     <y>30</y>
+     <width>501</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(6,27,53);</string>
+   </property>
+   <widget class="QLineEdit" name="registuser">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>30</y>
+      <width>271</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+        width: 100px;
+        height: 34px;
+        background: #05182F;
+        border: 1px solid #163B69;
+        border: 1px solid rgba(24, 65, 162, 0.5);
+        font: 9pt &quot;微软雅黑&quot;;
+        color: #DAFBFF;
+        line-height: 50px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="registpb">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>200</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+    </property>
+    <property name="text">
+     <string>确定</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>200</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+    </property>
+    <property name="text">
+     <string>返回</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="registpasswd">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>120</y>
+      <width>271</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+        width: 100px;
+        height: 34px;
+        background: #05182F;
+        border: 1px solid #163B69;
+        border: 1px solid rgba(24, 65, 162, 0.5);
+        font: 9pt &quot;微软雅黑&quot;;
+        color: #DAFBFF;
+        line-height: 50px;
+}</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>120</y>
+      <width>51</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid #163B69;
+    background: linear-gradient(0deg, #06244C 0%, #0C3976 100%);
+    border-image: url(:/MainView/kuang1.png);</string>
+    </property>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>51</width>
+       <height>39</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> color: #DAFBFF; /* 文本颜色 */
+    font: 9pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string>密  码</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>30</y>
+      <width>51</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid #163B69;
+    background: linear-gradient(0deg, #06244C 0%, #0C3976 100%);
+    border-image: url(:/MainView/kuang1.png);</string>
+    </property>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>51</width>
+       <height>39</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> color: #DAFBFF; /* 文本颜色 */
+    font: 9pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string>用户名</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_4" native="true">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>0</y>
+     <width>401</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(6,27,53);</string>
+   </property>
+   <widget class="QPushButton" name="reminpb">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>0</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#reminpb
+{
+    image: url(:/topicon/topminisize_n.png);
+    background: transparent;
+	min-width: 33px;
+    min-height: 33px;
+    max-width: 33px;
+    max-height: 33px;
+}
+
+QPushButton#reminpb:hover
+{
+    image: url(:/topicon/topminisize_h.png);
+    background: transparent;
+	min-width: 33px;
+    min-height: 33px;
+    max-width: 33px;
+    max-height: 33px;
+}
+
+QPushButton#reminpb:pressed
+{
+    image: url(:/topicon/topminisize_s.png);
+    background: transparent;
+	min-width: 33px;
+    min-height: 33px;
+    max-width: 33px;
+    max-height: 33px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="reclosepb">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>0</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton#reclosepb
+{
+    image: url(:/topicon/topclose_n.png);
+    background: transparent;
+    min-width: 33px;
+    min-height: 33px;
+    max-width: 33px;
+    max-height: 33px;
+}
+
+QPushButton#reclosepb:hover
+{
+    image: url(:/topicon/topclose_h.png);
+    background: transparent;
+   min-width: 33px;
+    min-height: 33px;
+    max-width: 33px;
+    max-height: 33px;
+}
+
+QPushButton#reclosepb:pressed
+{
+    image: url(:/topicon/topclose_s.png);
+    background: transparent;
+    min-width: 33px;
+    min-height: 33px;
+    max-width: 33px;
+    max-height: 33px;
+    margin-right: 0px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>0</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #DAFBFF; /* 文本颜色 */
+    font: 10pt &quot;微软雅黑&quot;;</string>
+    </property>
+    <property name="text">
+     <string>对抗鲁棒性系统</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

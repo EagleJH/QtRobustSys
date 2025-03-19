@@ -1,0 +1,2517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1170</width>
+    <height>739</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="sysnamebg" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/Title-bg/top_bg_01.png);</string>
+    </property>
+    <widget class="QLabel" name="sysname">
+     <property name="geometry">
+      <rect>
+       <x>-20</x>
+       <y>10</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    color: #DAFBFF; /* 文本颜色 */
+    font: 12pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string>    对抗鲁棒性系统</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>0</y>
+      <width>1021</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/Title-bg/top_bg_02.png);</string>
+    </property>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>780</x>
+       <y>10</y>
+       <width>241</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/Title-bg/top_r.png);</string>
+     </property>
+     <widget class="QPushButton" name="closepb">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>0</y>
+        <width>33</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#closepb
+{
+    image: url(:/topicon/topclose_n.png);
+    background: transparent;
+    min-width: 33px;
+    min-height: 33px;
+    max-width: 33px;
+    max-height: 33px;
+}
+
+QPushButton#closepb:hover
+{
+    image: url(:/topicon/topclose_h.png);
+    background: transparent;
+    min-width: 33px;
+    min-height: 33px;
+    max-width: 33px;
+    max-height: 33px;
+}
+
+QPushButton#closepb:pressed
+{
+    image: url(:/topicon/topclose_s.png);
+    background: transparent;
+    min-width: 33px;
+    min-height: 33px;
+    max-width: 33px;
+    max-height: 33px;
+    margin-right: 0px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="minpb">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>0</y>
+        <width>33</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#minpb
+{
+    image: url(:/topicon/topminisize_n.png);
+    background: transparent;
+min-width: 33px;
+    min-height: 33px;
+    max-width: 33px;
+    max-height: 33px;
+}
+
+QPushButton#minpb:hover
+{
+    image: url(:/topicon/topminisize_h.png);
+    background: transparent;
+min-width: 33px;
+    min-height: 33px;
+    max-width: 33px;
+    max-height: 33px;
+}
+
+QPushButton#minpb:pressed
+{
+    image: url(:/topicon/topminisize_s.png);
+    background: transparent;
+min-width: 33px;
+    min-height: 33px;
+    max-width: 33px;
+    max-height: 33px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="pb1">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>10</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#pb1
+{
+
+    image: url(:/topicon/topbutton_n.png);
+    color: white;
+    background: transparent;
+    width:150px;
+    height: 36px;
+}
+
+/* 首页顶部导航栏按钮 */
+QPushButton#pb1:pressed
+{
+    image: url(:/topicon/topbutton_s.png);
+    color: white;
+    background: transparent;
+    width:150px;
+    height: 36px;
+}</string>
+     </property>
+     <property name="text">
+      <string>对抗模型训练</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb2">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>10</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#pb2
+{
+
+    image: url(:/topicon/topbutton_n.png);
+    color: white;
+    background: transparent;
+    width:150px;
+    height: 36px;
+}
+
+/* 首页顶部导航栏按钮 */
+QPushButton#pb2:pressed
+{
+    image: url(:/topicon/topbutton_s.png);
+    color: white;
+    background: transparent;
+    width:150px;
+    height: 36px;
+}</string>
+     </property>
+     <property name="text">
+      <string>对抗样本生成</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb3">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>10</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#pb3
+{
+
+    image: url(:/topicon/topbutton_n.png);
+    color: white;
+    background: transparent;
+    width:150px;
+    height: 36px;
+}
+
+/* 首页顶部导航栏按钮 */
+QPushButton#pb3:pressed
+{
+    image: url(:/topicon/topbutton_s.png);
+    color: white;
+    background: transparent;
+    width:150px;
+    height: 36px;
+}</string>
+     </property>
+     <property name="text">
+      <string>检测模型训练</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb4">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>10</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#pb4
+{
+
+    image: url(:/topicon/topbutton_n.png);
+    color: white;
+    background: transparent;
+    width:150px;
+    height: 36px;
+}
+
+/* 首页顶部导航栏按钮 */
+QPushButton#pb4:pressed
+{
+    image: url(:/topicon/topbutton_s.png);
+    color: white;
+    background: transparent;
+    width:150px;
+    height: 36px;
+}</string>
+     </property>
+     <property name="text">
+      <string>检测模型预测</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb5">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>10</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#pb5
+{
+
+    image: url(:/topicon/topbutton_n.png);
+    color: white;
+    background: transparent;
+    width:150px;
+    height: 36px;
+}
+
+/* 首页顶部导航栏按钮 */
+QPushButton#pb5:pressed
+{
+    image: url(:/topicon/topbutton_s.png);
+    color: white;
+    background: transparent;
+    width:150px;
+    height: 36px;
+}</string>
+     </property>
+     <property name="text">
+      <string>数据样本制作</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb6">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>10</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#pb6
+{
+
+    image: url(:/topicon/topbutton_n.png);
+    color: white;
+    background: transparent;
+    width:150px;
+    height: 36px;
+}
+
+/* 首页顶部导航栏按钮 */
+QPushButton#pb6:pressed
+{
+    image: url(:/topicon/topbutton_s.png);
+    color: white;
+    background: transparent;
+    width:150px;
+    height: 36px;
+}</string>
+     </property>
+     <property name="text">
+      <string>训练结果查看</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>50</y>
+      <width>1191</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(6,27,53);</string>
+    </property>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1171</width>
+       <height>641</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <widget class="QWidget" name="gridLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>290</y>
+         <width>651</width>
+         <height>301</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="6" column="0">
+         <widget class="QLabel" name="pthlb">
+          <property name="styleSheet">
+           <string notr="true">color: #DAFBFF; /* 文本颜色 */
+    font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>模型：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="2">
+         <widget class="QLineEdit" name="pthtxt">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+        width: 100px;
+        height: 34px;
+        background: #05182F;
+        border: 1px solid #163B69;
+        border: 1px solid rgba(24, 65, 162, 0.5);
+        font: 9pt &quot;微软雅黑&quot;;
+        color: #DAFBFF;
+        line-height: 50px;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="4">
+         <widget class="QPushButton" name="benignpb">
+          <property name="styleSheet">
+           <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+          </property>
+          <property name="text">
+           <string>选    择</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLineEdit" name="vectortxt">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+        width: 100px;
+        height: 34px;
+        background: #05182F;
+        border: 1px solid #163B69;
+        border: 1px solid rgba(24, 65, 162, 0.5);
+        font: 9pt &quot;微软雅黑&quot;;
+        color: #DAFBFF;
+        line-height: 50px;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QLineEdit" name="malwaretxt">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+        width: 100px;
+        height: 34px;
+        background: #05182F;
+        border: 1px solid #163B69;
+        border: 1px solid rgba(24, 65, 162, 0.5);
+        font: 9pt &quot;微软雅黑&quot;;
+        color: #DAFBFF;
+        line-height: 50px;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLineEdit" name="batchtxt">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+        width: 100px;
+        height: 34px;
+        background: #05182F;
+        border: 1px solid #163B69;
+        border: 1px solid rgba(24, 65, 162, 0.5);
+        font: 9pt &quot;微软雅黑&quot;;
+        color: #DAFBFF;
+        line-height: 50px;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLineEdit" name="epochtxt">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+        width: 100px;
+        height: 34px;
+        background: #05182F;
+        border: 1px solid #163B69;
+        border: 1px solid rgba(24, 65, 162, 0.5);
+        font: 9pt &quot;微软雅黑&quot;;
+        color: #DAFBFF;
+        line-height: 50px;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="4">
+         <widget class="QPushButton" name="malwarepb">
+          <property name="styleSheet">
+           <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+          </property>
+          <property name="text">
+           <string>   选     择   </string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="malwarelb">
+          <property name="styleSheet">
+           <string notr="true">color: #DAFBFF; /* 文本颜色 */
+    font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>恶意样本：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="vectorlb">
+          <property name="styleSheet">
+           <string notr="true">color: #DAFBFF; /* 文本颜色 */
+    font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>噪声：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="benignlb">
+          <property name="styleSheet">
+           <string notr="true">color: #DAFBFF; /* 文本颜色 */
+    font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>良性样本：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="2">
+         <widget class="QLineEdit" name="benigntxt">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+        width: 100px;
+        height: 34px;
+        background: #05182F;
+        border: 1px solid #163B69;
+        border: 1px solid rgba(24, 65, 162, 0.5);
+        font: 9pt &quot;微软雅黑&quot;;
+        color: #DAFBFF;
+        line-height: 50px;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="classfierlb">
+          <property name="styleSheet">
+           <string notr="true">color: #DAFBFF; /* 文本颜色 */
+    font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>分类器：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="batchlb">
+          <property name="styleSheet">
+           <string notr="true">color: #DAFBFF; /* 文本颜色 */
+    font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>批数量：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="epochlb">
+          <property name="styleSheet">
+           <string notr="true">color: #DAFBFF; /* 文本颜色 */
+    font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>训练轮数：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="4">
+         <widget class="QPushButton" name="pthpb">
+          <property name="styleSheet">
+           <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+          </property>
+          <property name="text">
+           <string>选   择</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QComboBox" name="classfiertxt">
+          <property name="styleSheet">
+           <string notr="true">QComboBox
+{
+    width: 130px;
+    height: 30px;
+    background: #0B2642;
+    border: 1px solid rgba(31, 42, 72, 194);
+    border-image: url(:/icon/AontherUI/leida1_n.png);
+    font: 9pt &quot;微软雅黑&quot;;
+    line-height: 35px;
+    color: white;
+}
+
+QComboBox::down-arrow{
+    image:url(&quot;:/icon/RaderControl/Arrow1.png&quot;);
+    background: transparent;
+}
+
+QComboBox::drop-down{
+    background: transparent;
+}
+</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>RandomForest</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>DecisionTress</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>LogisticRegression</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>MutiLayerPerceptron</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>SVM</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>LightGBM</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>XGBoost</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QTextEdit" name="textEdit">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>10</y>
+         <width>1071</width>
+         <height>271</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QTextEdit:focus, QLineEdit:focus{
+        font: 9pt &quot;微软雅黑&quot;;
+        color: rgba(206, 217, 237, 0.7);
+}
+
+QTextEdit:hover, QLineEdit::hover{
+        border: 1px solid rgba(24, 65, 162, 1);
+}</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="runpb">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>600</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+       </property>
+       <property name="text">
+        <string>运行</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="flashpb">
+       <property name="geometry">
+        <rect>
+         <x>600</x>
+         <y>600</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+       </property>
+       <property name="text">
+        <string>清空</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <widget class="QWidget" name="gridLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>320</y>
+         <width>821</width>
+         <height>261</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="advgrid">
+        <item row="5" column="0">
+         <widget class="QLabel" name="label6">
+          <property name="styleSheet">
+           <string notr="true">color: #DAFBFF; /* 文本颜色 */
+    font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>良性原始样本:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label5">
+          <property name="styleSheet">
+           <string notr="true">color: #DAFBFF; /* 文本颜色 */
+    font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>恶意原始样本：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="styleSheet">
+           <string notr="true">color: #DAFBFF; /* 文本颜色 */
+    font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>噪声维度：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label4">
+          <property name="styleSheet">
+           <string notr="true">color: #DAFBFF; /* 文本颜色 */
+    font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>模型参数文件：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label3">
+          <property name="styleSheet">
+           <string notr="true">color: #DAFBFF; /* 文本颜色 */
+    font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>目标检测器：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label2">
+          <property name="styleSheet">
+           <string notr="true">color: #DAFBFF; /* 文本颜色 */
+    font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>生成条目：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="params">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+        width: 100px;
+        height: 34px;
+        background: #05182F;
+        border: 1px solid #163B69;
+        border: 1px solid rgba(24, 65, 162, 0.5);
+        font: 9pt &quot;微软雅黑&quot;;
+        color: #DAFBFF;
+        line-height: 50px;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="malware">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+        width: 100px;
+        height: 34px;
+        background: #05182F;
+        border: 1px solid #163B69;
+        border: 1px solid rgba(24, 65, 162, 0.5);
+        font: 9pt &quot;微软雅黑&quot;;
+        color: #DAFBFF;
+        line-height: 50px;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLineEdit" name="benign">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+        width: 100px;
+        height: 34px;
+        background: #05182F;
+        border: 1px solid #163B69;
+        border: 1px solid rgba(24, 65, 162, 0.5);
+        font: 9pt &quot;微软雅黑&quot;;
+        color: #DAFBFF;
+        line-height: 50px;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QPushButton" name="advpb1">
+          <property name="styleSheet">
+           <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+          </property>
+          <property name="text">
+           <string>  选     择   </string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QPushButton" name="advpb2">
+          <property name="styleSheet">
+           <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+          </property>
+          <property name="text">
+           <string>选    择</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="2">
+         <widget class="QPushButton" name="advpb3">
+          <property name="styleSheet">
+           <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+          </property>
+          <property name="text">
+           <string>选    择</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="count">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+        width: 100px;
+        height: 34px;
+        background: #05182F;
+        border: 1px solid #163B69;
+        border: 1px solid rgba(24, 65, 162, 0.5);
+        font: 9pt &quot;微软雅黑&quot;;
+        color: #DAFBFF;
+        line-height: 50px;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="noise">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+        width: 100px;
+        height: 34px;
+        background: #05182F;
+        border: 1px solid #163B69;
+        border: 1px solid rgba(24, 65, 162, 0.5);
+        font: 9pt &quot;微软雅黑&quot;;
+        color: #DAFBFF;
+        line-height: 50px;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QComboBox" name="detector">
+          <property name="styleSheet">
+           <string notr="true">QComboBox
+{
+    width: 130px;
+    height: 30px;
+    background: #0B2642;
+    border: 1px solid rgba(31, 42, 72, 194);
+    border-image: url(:/icon/AontherUI/leida1_n.png);
+    font: 9pt &quot;微软雅黑&quot;;
+    line-height: 35px;
+    color: white;
+}
+
+QComboBox::down-arrow{
+    image:url(&quot;:/icon/RaderControl/Arrow1.png&quot;);
+    background: transparent;
+}
+
+QComboBox::drop-down{
+    background: transparent;
+}
+</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>RandomForest</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>DecisionTress</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>LogisticRegression</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>MutiLayerPerceptron</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>SVM</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>LightGBM</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>XGBoost</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QTableWidget" name="advtable">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>20</y>
+         <width>1121</width>
+         <height>291</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTableWidget
+{
+    color: white;
+    background: #061B35;
+    border: 1px solid #163B69;
+    alternate-background-color:#0B2443;
+    gridline-color: 1px solid #163B69;
+}
+
+QTableWidget::item{
+    border: 1px solid #163B69;
+    /* 设置文本水平和垂直居中 */
+    text-align: center;
+    vertical-align: middle;
+}
+QHeaderView
+{
+    background:transparent;
+}
+
+QHeaderView::section
+{
+    color:rgb(218, 251, 255);
+    background: #0B3259;
+    border: 1px solid #163B69;
+}
+QScrollBar:vertical{
+    width:16px;
+    border-style:flat;
+    border-radius: 4px;
+    border:0px;
+    background: #19191A;
+}
+
+QScrollBar::handle:vertical{
+    background: #163B69;
+    border-radius: 4px;
+    width:8px;
+    min-height:91px;
+    border-style:flat;
+}
+
+QScrollBar::handle:vertical::hover{
+    background: #163B69;
+    border-radius: 4px;
+    width:16px;
+}
+
+QScrollBar::handle:vertical::pressed{
+    background: #163B69;
+    border-radius:4px;
+}
+
+QScrollBar:horizontal{
+    height:16px;
+    border-style:flat;
+    border-radius: 4px;
+    border:0px;
+    background: #19191A;
+}
+
+QScrollBar::handle:horizontal{
+    background: #163B69;
+    border-radius: 4px;
+    height:8px;
+    min-width:91px;
+    border-style:flat;
+}
+QScrollBar::handle:horizontal::hover{
+    background: #163B69;
+    border-radius: 4px;
+    height:8px;
+}
+QScrollBar::handle:horizontal::pressed{
+    background: #163B69;
+    border-radius:4px;
+    height:8px;
+}
+
+QScrollBar::sub-page:vertical {
+    background: #19191A;
+    border-style:flat;
+}
+
+QScrollBar::add-page:vertical {
+   background: #19191A;
+    border-style:flat;
+}
+
+QScrollBar::add-line:vertical{
+   background: #19191A;
+}
+
+QScrollBar::sub-line:vertical {
+   background: #19191A;
+}
+
+
+QScrollBar::sub-page:horizontal {
+    background: #19191A;
+    border-style:flat;
+}
+QScrollBar::add-page:horizontal {
+   background: #19191A;
+    border-style:flat;
+}
+QScrollBar::sub-line:horizontal {
+   background: #19191A;
+}
+QScrollBar::add-line:horizontal{
+   background: #19191A;
+}
+</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="genpb">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>590</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+       </property>
+       <property name="text">
+        <string>生成</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_3">
+      <widget class="QWidget" name="gridLayoutWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>250</y>
+         <width>741</width>
+         <height>378</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="detectgrid">
+        <item row="8" column="0">
+         <widget class="QLabel" name="label_9">
+          <property name="styleSheet">
+           <string notr="true">color: #DAFBFF; /* 文本颜色 */
+    font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>模型参数：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="11">
+         <widget class="QPushButton" name="datapb">
+          <property name="styleSheet">
+           <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+          </property>
+          <property name="text">
+           <string>   选    择   </string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="styleSheet">
+           <string notr="true">color: #DAFBFF; /* 文本颜色 */
+    font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>衰减系数：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="11">
+         <widget class="QPushButton" name="modelpb">
+          <property name="styleSheet">
+           <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+          </property>
+          <property name="text">
+           <string>选    择</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="styleSheet">
+           <string notr="true">color: #DAFBFF; /* 文本颜色 */
+    font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>实验类型：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="styleSheet">
+           <string notr="true">color: #DAFBFF; /* 文本颜色 */
+    font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>学习率：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_10">
+          <property name="styleSheet">
+           <string notr="true">color: #DAFBFF; /* 文本颜色 */
+    font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>训练轮数：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="styleSheet">
+           <string notr="true">color: #DAFBFF; /* 文本颜色 */
+    font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>数据类别：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="styleSheet">
+           <string notr="true">color: #DAFBFF; /* 文本颜色 */
+    font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>步长：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="styleSheet">
+           <string notr="true">color: #DAFBFF; /* 文本颜色 */
+    font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>数据集：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="epoch">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+        width: 100px;
+        height: 34px;
+        background: #05182F;
+        border: 1px solid #163B69;
+        border: 1px solid rgba(24, 65, 162, 0.5);
+        font: 9pt &quot;微软雅黑&quot;;
+        color: #DAFBFF;
+        line-height: 50px;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_11">
+          <property name="styleSheet">
+           <string notr="true">color: #DAFBFF; /* 文本颜色 */
+    font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>批数量：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="batchsize">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+        width: 100px;
+        height: 34px;
+        background: #05182F;
+        border: 1px solid #163B69;
+        border: 1px solid rgba(24, 65, 162, 0.5);
+        font: 9pt &quot;微软雅黑&quot;;
+        color: #DAFBFF;
+        line-height: 50px;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="lr">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+        width: 100px;
+        height: 34px;
+        background: #05182F;
+        border: 1px solid #163B69;
+        border: 1px solid rgba(24, 65, 162, 0.5);
+        font: 9pt &quot;微软雅黑&quot;;
+        color: #DAFBFF;
+        line-height: 50px;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="step">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+        width: 100px;
+        height: 34px;
+        background: #05182F;
+        border: 1px solid #163B69;
+        border: 1px solid rgba(24, 65, 162, 0.5);
+        font: 9pt &quot;微软雅黑&quot;;
+        color: #DAFBFF;
+        line-height: 50px;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="gamma">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+        width: 100px;
+        height: 34px;
+        background: #05182F;
+        border: 1px solid #163B69;
+        border: 1px solid rgba(24, 65, 162, 0.5);
+        font: 9pt &quot;微软雅黑&quot;;
+        color: #DAFBFF;
+        line-height: 50px;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QComboBox" name="experiment">
+          <property name="styleSheet">
+           <string notr="true">QComboBox
+{
+    width: 130px;
+    height: 30px;
+    background: #0B2642;
+    border: 1px solid rgba(31, 42, 72, 194);
+    border-image: url(:/icon/AontherUI/leida1_n.png);
+    font: 9pt &quot;微软雅黑&quot;;
+    line-height: 35px;
+    color: white;
+}
+
+QComboBox::down-arrow{
+    image:url(&quot;:/icon/RaderControl/Arrow1.png&quot;);
+    background: transparent;
+}
+
+QComboBox::drop-down{
+    background: transparent;
+}
+</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>binary</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>family</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLineEdit" name="classes">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+        width: 100px;
+        height: 34px;
+        background: #05182F;
+        border: 1px solid #163B69;
+        border: 1px solid rgba(24, 65, 162, 0.5);
+        font: 9pt &quot;微软雅黑&quot;;
+        color: #DAFBFF;
+        line-height: 50px;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QLineEdit" name="datapath">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+        width: 100px;
+        height: 34px;
+        background: #05182F;
+        border: 1px solid #163B69;
+        border: 1px solid rgba(24, 65, 162, 0.5);
+        font: 9pt &quot;微软雅黑&quot;;
+        color: #DAFBFF;
+        line-height: 50px;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QLineEdit" name="modelpath">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+        width: 100px;
+        height: 34px;
+        background: #05182F;
+        border: 1px solid #163B69;
+        border: 1px solid rgba(24, 65, 162, 0.5);
+        font: 9pt &quot;微软雅黑&quot;;
+        color: #DAFBFF;
+        line-height: 50px;
+}</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QTextEdit" name="detectlog">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>1121</width>
+         <height>231</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="detectpb">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>610</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+       </property>
+       <property name="text">
+        <string>运行</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="clearpb">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>610</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+       </property>
+       <property name="text">
+        <string>清空</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="stoppb">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>610</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+       </property>
+       <property name="text">
+        <string>停止</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_4">
+      <widget class="QWidget" name="gridLayoutWidget_4">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>310</y>
+         <width>711</width>
+         <height>251</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="detectgrid_2">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_14">
+          <property name="styleSheet">
+           <string notr="true">color: #DAFBFF; /* 文本颜色 */
+    font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>预测类型：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="classes_2">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+        width: 100px;
+        height: 34px;
+        background: #05182F;
+        border: 1px solid #163B69;
+        border: 1px solid rgba(24, 65, 162, 0.5);
+        font: 9pt &quot;微软雅黑&quot;;
+        color: #DAFBFF;
+        line-height: 50px;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_16">
+          <property name="styleSheet">
+           <string notr="true">color: #DAFBFF; /* 文本颜色 */
+    font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>数据类别：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_18">
+          <property name="styleSheet">
+           <string notr="true">color: #DAFBFF; /* 文本颜色 */
+    font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>数据集：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="11">
+         <widget class="QPushButton" name="modelpb_2">
+          <property name="styleSheet">
+           <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+          </property>
+          <property name="text">
+           <string>选     择</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="11">
+         <widget class="QPushButton" name="datapb_2">
+          <property name="styleSheet">
+           <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+          </property>
+          <property name="text">
+           <string>   选     择   </string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="datapath_2">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+        width: 100px;
+        height: 34px;
+        background: #05182F;
+        border: 1px solid #163B69;
+        border: 1px solid rgba(24, 65, 162, 0.5);
+        font: 9pt &quot;微软雅黑&quot;;
+        color: #DAFBFF;
+        line-height: 50px;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="experiment_2">
+          <property name="styleSheet">
+           <string notr="true">QComboBox
+{
+    width: 130px;
+    height: 30px;
+    background: #0B2642;
+    border: 1px solid rgba(31, 42, 72, 194);
+    border-image: url(:/icon/AontherUI/leida1_n.png);
+    font: 9pt &quot;微软雅黑&quot;;
+    line-height: 35px;
+    color: white;
+}
+
+QComboBox::down-arrow{
+    image:url(&quot;:/icon/RaderControl/Arrow1.png&quot;);
+    background: transparent;
+}
+
+QComboBox::drop-down{
+    background: transparent;
+}
+</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>binary</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>family</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_12">
+          <property name="styleSheet">
+           <string notr="true">color: #DAFBFF; /* 文本颜色 */
+    font: 9pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>模型参数：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="modelpath_2">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+        width: 100px;
+        height: 34px;
+        background: #05182F;
+        border: 1px solid #163B69;
+        border: 1px solid rgba(24, 65, 162, 0.5);
+        font: 9pt &quot;微软雅黑&quot;;
+        color: #DAFBFF;
+        line-height: 50px;
+}</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="detectpb_2">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>590</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+       </property>
+       <property name="text">
+        <string>运行</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="stoppb_2">
+       <property name="geometry">
+        <rect>
+         <x>530</x>
+         <y>590</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+       </property>
+       <property name="text">
+        <string>停止</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="clearpb_2">
+       <property name="geometry">
+        <rect>
+         <x>660</x>
+         <y>590</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+       </property>
+       <property name="text">
+        <string>清空</string>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="detectable">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>10</y>
+         <width>1101</width>
+         <height>281</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTableWidget
+{
+    color: white;
+    background: #061B35;
+    border: 1px solid #163B69;
+    alternate-background-color:#0B2443;
+    gridline-color: 1px solid #163B69;
+}
+
+QTableWidget::item{
+    border: 1px solid #163B69;
+    /* 设置文本水平和垂直居中 */
+    text-align: center;
+    vertical-align: middle;
+}
+QHeaderView
+{
+    background:transparent;
+}
+
+QHeaderView::section
+{
+    color:rgb(218, 251, 255);
+    background: #0B3259;
+    border: 1px solid #163B69;
+}
+QScrollBar:vertical{
+    width:16px;
+    border-style:flat;
+    border-radius: 4px;
+    border:0px;
+    background: #19191A;
+}
+
+QScrollBar::handle:vertical{
+    background: #163B69;
+    border-radius: 4px;
+    width:8px;
+    min-height:91px;
+    border-style:flat;
+}
+
+QScrollBar::handle:vertical::hover{
+    background: #163B69;
+    border-radius: 4px;
+    width:16px;
+}
+
+QScrollBar::handle:vertical::pressed{
+    background: #163B69;
+    border-radius:4px;
+}
+
+QScrollBar:horizontal{
+    height:16px;
+    border-style:flat;
+    border-radius: 4px;
+    border:0px;
+    background: #19191A;
+}
+
+QScrollBar::handle:horizontal{
+    background: #163B69;
+    border-radius: 4px;
+    height:8px;
+    min-width:91px;
+    border-style:flat;
+}
+QScrollBar::handle:horizontal::hover{
+    background: #163B69;
+    border-radius: 4px;
+    height:8px;
+}
+QScrollBar::handle:horizontal::pressed{
+    background: #163B69;
+    border-radius:4px;
+    height:8px;
+}
+
+QScrollBar::sub-page:vertical {
+    background: #19191A;
+    border-style:flat;
+}
+
+QScrollBar::add-page:vertical {
+   background: #19191A;
+    border-style:flat;
+}
+
+QScrollBar::add-line:vertical{
+   background: #19191A;
+}
+
+QScrollBar::sub-line:vertical {
+   background: #19191A;
+}
+
+
+QScrollBar::sub-page:horizontal {
+    background: #19191A;
+    border-style:flat;
+}
+QScrollBar::add-page:horizontal {
+   background: #19191A;
+    border-style:flat;
+}
+QScrollBar::sub-line:horizontal {
+   background: #19191A;
+}
+QScrollBar::add-line:horizontal{
+   background: #19191A;
+}
+</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_5">
+      <widget class="QStackedWidget" name="dataStack">
+       <property name="geometry">
+        <rect>
+         <x>-10</x>
+         <y>50</y>
+         <width>1161</width>
+         <height>571</height>
+        </rect>
+       </property>
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <widget class="QWidget" name="page_9">
+        <widget class="QPushButton" name="npyrun">
+         <property name="geometry">
+          <rect>
+           <x>780</x>
+           <y>20</y>
+           <width>131</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+         </property>
+         <property name="text">
+          <string>可视化npy</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="path">
+         <property name="geometry">
+          <rect>
+           <x>250</x>
+           <y>20</y>
+           <width>331</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit{
+        width: 100px;
+        height: 34px;
+        background: #05182F;
+        border: 1px solid #163B69;
+        border: 1px solid rgba(24, 65, 162, 0.5);
+        font: 9pt &quot;微软雅黑&quot;;
+        color: #DAFBFF;
+        line-height: 50px;
+}</string>
+         </property>
+        </widget>
+        <widget class="QTableWidget" name="npytable">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>81</y>
+           <width>1101</width>
+           <height>481</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableWidget
+{
+    color: white;
+    background: #061B35;
+    border: 1px solid #163B69;
+    alternate-background-color:#0B2443;
+    gridline-color: 1px solid #163B69;
+}
+
+QTableWidget::item{
+    border: 1px solid #163B69;
+    /* 设置文本水平和垂直居中 */
+    text-align: center;
+    vertical-align: middle;
+}
+QHeaderView
+{
+    background:transparent;
+}
+
+QHeaderView::section
+{
+    color:rgb(218, 251, 255);
+    background: #0B3259;
+    border: 1px solid #163B69;
+}
+
+QScrollBar:vertical{
+    width:16px;
+    border-style:flat;
+    border-radius: 4px;
+    border:0px;
+    background: #19191A;
+}
+
+QScrollBar::handle:vertical{
+    background: #163B69;
+    border-radius: 4px;
+    width:8px;
+    min-height:91px;
+    border-style:flat;
+}
+
+QScrollBar::handle:vertical::hover{
+    background: #163B69;
+    border-radius: 4px;
+    width:16px;
+}
+
+QScrollBar::handle:vertical::pressed{
+    background: #163B69;
+    border-radius:4px;
+}
+
+QScrollBar:horizontal{
+    height:16px;
+    border-style:flat;
+    border-radius: 4px;
+    border:0px;
+    background: #19191A;
+}
+
+QScrollBar::handle:horizontal{
+    background: #163B69;
+    border-radius: 4px;
+    height:8px;
+    min-width:91px;
+    border-style:flat;
+}
+QScrollBar::handle:horizontal::hover{
+    background: #163B69;
+    border-radius: 4px;
+    height:8px;
+}
+QScrollBar::handle:horizontal::pressed{
+    background: #163B69;
+    border-radius:4px;
+    height:8px;
+}
+
+QScrollBar::sub-page:vertical {
+    background: #19191A;
+    border-style:flat;
+}
+
+QScrollBar::add-page:vertical {
+   background: #19191A;
+    border-style:flat;
+}
+
+QScrollBar::add-line:vertical{
+   background: #19191A;
+}
+
+QScrollBar::sub-line:vertical {
+   background: #19191A;
+}
+
+
+QScrollBar::sub-page:horizontal {
+    background: #19191A;
+    border-style:flat;
+}
+QScrollBar::add-page:horizontal {
+   background: #19191A;
+    border-style:flat;
+}
+QScrollBar::sub-line:horizontal {
+   background: #19191A;
+}
+QScrollBar::add-line:horizontal{
+   background: #19191A;
+}
+</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="datacombox">
+         <property name="geometry">
+          <rect>
+           <x>610</x>
+           <y>20</y>
+           <width>141</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QComboBox
+{
+    width: 130px;
+    height: 30px;
+    background: #0B2642;
+    border: 1px solid rgba(31, 42, 72, 194);
+    border-image: url(:/icon/AontherUI/leida1_n.png);
+    font: 9pt &quot;微软雅黑&quot;;
+    line-height: 35px;
+    color: white;
+}
+
+QComboBox::down-arrow{
+    image:url(&quot;:/icon/RaderControl/Arrow1.png&quot;);
+    background: transparent;
+}
+
+QComboBox::drop-down{
+    background: transparent;
+}
+</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>选择APK文件</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>选择npy文件</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QPushButton" name="apkrun">
+         <property name="geometry">
+          <rect>
+           <x>780</x>
+           <y>20</y>
+           <width>131</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+         </property>
+         <property name="text">
+          <string>制作npy文件</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_10">
+        <widget class="QLineEdit" name="path2">
+         <property name="geometry">
+          <rect>
+           <x>250</x>
+           <y>20</y>
+           <width>331</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit{
+        width: 100px;
+        height: 34px;
+        background: #05182F;
+        border: 1px solid #163B69;
+        border: 1px solid rgba(24, 65, 162, 0.5);
+        font: 9pt &quot;微软雅黑&quot;;
+        color: #DAFBFF;
+        line-height: 50px;
+}</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="apkchs">
+         <property name="geometry">
+          <rect>
+           <x>610</x>
+           <y>20</y>
+           <width>131</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+         </property>
+         <property name="text">
+          <string>选择APK</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="apktrans">
+         <property name="geometry">
+          <rect>
+           <x>770</x>
+           <y>20</y>
+           <width>131</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+         </property>
+         <property name="text">
+          <string>转换特征图</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labeldex">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>90</y>
+           <width>521</width>
+           <height>481</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelpic">
+         <property name="geometry">
+          <rect>
+           <x>590</x>
+           <y>90</y>
+           <width>561</width>
+           <height>481</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="npydata">
+       <property name="geometry">
+        <rect>
+         <x>450</x>
+         <y>20</y>
+         <width>121</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+       </property>
+       <property name="text">
+        <string>npy文件制作</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pngdata">
+       <property name="geometry">
+        <rect>
+         <x>600</x>
+         <y>20</y>
+         <width>121</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+       </property>
+       <property name="text">
+        <string>png文件制作</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_6">
+      <widget class="QStackedWidget" name="stackedWidgetRe">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>30</y>
+         <width>1151</width>
+         <height>601</height>
+        </rect>
+       </property>
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <widget class="QWidget" name="page_7">
+        <widget class="QChartView" name="advView" native="true">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>10</y>
+           <width>1151</width>
+           <height>331</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QChartView" name="lossView" native="true">
+         <property name="geometry">
+          <rect>
+           <x>570</x>
+           <y>340</y>
+           <width>561</width>
+           <height>261</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QChartView" name="barView" native="true">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>340</y>
+           <width>551</width>
+           <height>261</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_8">
+        <widget class="QTableWidget" name="matrixtable">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>20</y>
+           <width>751</width>
+           <height>581</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableWidget
+{
+    color: white;
+    background: #061B35;
+    border: 1px solid #163B69;
+    alternate-background-color:#0B2443;
+    gridline-color: 1px solid #163B69;
+}
+
+QTableWidget::item{
+    border: 1px solid #163B69;
+    /* 设置文本水平和垂直居中 */
+    text-align: center;
+    vertical-align: middle;
+}
+QHeaderView
+{
+    background:transparent;
+}
+
+QHeaderView::section
+{
+    color:rgb(218, 251, 255);
+    background: #0B3259;
+    border: 1px solid #163B69;
+}
+QScrollBar:vertical{
+    width:16px;
+    border-style:flat;
+    border-radius: 4px;
+    border:0px;
+    background: #19191A;
+}
+
+QScrollBar::handle:vertical{
+    background: #163B69;
+    border-radius: 4px;
+    width:8px;
+    min-height:91px;
+    border-style:flat;
+}
+
+QScrollBar::handle:vertical::hover{
+    background: #163B69;
+    border-radius: 4px;
+    width:16px;
+}
+
+QScrollBar::handle:vertical::pressed{
+    background: #163B69;
+    border-radius:4px;
+}
+
+QScrollBar:horizontal{
+    height:16px;
+    border-style:flat;
+    border-radius: 4px;
+    border:0px;
+    background: #19191A;
+}
+
+QScrollBar::handle:horizontal{
+    background: #163B69;
+    border-radius: 4px;
+    height:8px;
+    min-width:91px;
+    border-style:flat;
+}
+QScrollBar::handle:horizontal::hover{
+    background: #163B69;
+    border-radius: 4px;
+    height:8px;
+}
+QScrollBar::handle:horizontal::pressed{
+    background: #163B69;
+    border-radius:4px;
+    height:8px;
+}
+
+QScrollBar::sub-page:vertical {
+    background: #19191A;
+    border-style:flat;
+}
+
+QScrollBar::add-page:vertical {
+   background: #19191A;
+    border-style:flat;
+}
+
+QScrollBar::add-line:vertical{
+   background: #19191A;
+}
+
+QScrollBar::sub-line:vertical {
+   background: #19191A;
+}
+
+
+QScrollBar::sub-page:horizontal {
+    background: #19191A;
+    border-style:flat;
+}
+QScrollBar::add-page:horizontal {
+   background: #19191A;
+    border-style:flat;
+}
+QScrollBar::sub-line:horizontal {
+   background: #19191A;
+}
+QScrollBar::add-line:horizontal{
+   background: #19191A;
+}
+
+</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="loss_re">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>10</y>
+         <width>131</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+       </property>
+       <property name="text">
+        <string>损失函数可视化</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="matrix">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>10</y>
+         <width>131</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: rgba(0,84,143,0.8);
+    border: 1px solid #1197E2;
+    font: 9pt &quot;微软雅黑&quot;;
+    color: #5BC5FF;</string>
+       </property>
+       <property name="text">
+        <string>实验结果可视化</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>10</y>
+         <width>151</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox
+{
+    width: 130px;
+    height: 30px;
+    background: #0B2642;
+    border: 1px solid rgba(31, 42, 72, 194);
+    border-image: url(:/icon/AontherUI/leida1_n.png);
+    font: 9pt &quot;微软雅黑&quot;;
+    line-height: 35px;
+    color: white;
+}
+
+QComboBox::down-arrow{
+    image:url(&quot;:/icon/RaderControl/Arrow1.png&quot;);
+    background: transparent;
+}
+
+QComboBox::drop-down{
+    background: transparent;
+}
+</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>对抗模型训练结果</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>检测模型训练结果</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1170</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QWidget</extends>
+   <header>qchartview.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
